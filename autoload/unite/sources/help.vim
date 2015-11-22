@@ -150,7 +150,7 @@ function! s:source.async_gather_candidates(args, context)
                         \ name, ((file.lang != '') ? '@' . file.lang : ''), file.path)
 
             call add(list, {
-                        \ 'word':   word,
+                        \ 'word':   abbr,
                         \ 'abbr':   abbr,
                         \ 'action__command': 'help ' . word,
                         \ 'source__lang'   : file.lang != '' ? file.lang : 'en'
